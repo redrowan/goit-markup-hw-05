@@ -84,6 +84,8 @@ position:relative;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    transition: 250ms;
+     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-links:hover,
@@ -91,25 +93,11 @@ position:relative;
     color: var(--main-color);
 }
 
-.current-studio {
+.current {
     color: var(--main-color);
 }
 
-.current-studio::after {
-    display: block;
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 4px;
-    background-color: currentColor;
-    border-radius: 2px;
-    bottom: 0;
-}
-.current-portfolio {
-    color: var(--main-color);
-}
-
-.current-portfolio::after {
+.current::after {
     display: block;
     position: absolute;
     content: '';
@@ -170,6 +158,9 @@ margin-left: 76px;
     text-decoration: none;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    transition: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .header-contacts:hover,
@@ -213,6 +204,8 @@ margin-left: 76px;
     max-width: 174px;
     padding: 16px 32px;
     border: none;
+    transition: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -337,6 +330,8 @@ gap: 48px 24px;
     background-color: var(--logo-button-color);
     justify-content: center;
     align-items: center;
+    transition: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list-link:hover, .social-list-link:focus {
@@ -371,6 +366,8 @@ gap: 48px 24px;
     justify-content: center;
     align-items: center;
     fill: var(--customers-color);
+    transition: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 
@@ -402,6 +399,8 @@ gap: 48px 24px;
     border-radius: 4px;
     cursor: pointer;
     padding: 12px 24px;
+    transition: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .works:hover, .works:focus {
@@ -464,10 +463,12 @@ gap: 48px 24px;
 transform: translateY(0);
 }
 
-.portfolio-present:hover, .portfolio-present:focus {
+.portfolio-links:hover, .portfolio-links:focus {
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 2px 1px rgba(46, 47, 66, 0.08);
+        transition: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-background {
@@ -506,6 +507,8 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     background-color: rgba(255, 255, 255, 0.1);
     justify-content: center;
     align-items: center;
+    transition: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .sociallinks-footer:hover, .sociallinks-footer:focus {
@@ -572,4 +575,13 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     background-color: var(--border-color);
     border-radius:50%;
         border: 1px solid rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        transition: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close:hover, .modal-close:focus {
+    background-color: var(--main-color);
+    fill: var(--background-color);
+
 }
